@@ -1,0 +1,72 @@
+.container {
+  display: flex;
+  padding: 2rem;
+}
+
+.container .section {
+  display: flex;
+  flex-direction: column;
+  padding: 0 2rem;
+  flex: 1;
+}
+
+.container .section:last-child {
+  border-left: 1px solid #b7b7b7;
+}
+
+.container .section .sectionLabel {
+  font-size: 0.9rem;
+  padding-left: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.container .section .sectionForm {
+  display: flex;
+  flex-direction: column;
+}
+
+.container .section .sectionForm .inputBox {
+  border: 1px solid #b7b7b7;
+  border-radius: 10px;
+  color: #65696c;
+  outline: none;
+  padding: 15px;
+  font-family: "Kanit", sans-serif;
+}
+
+.container .section .sectionForm .submitButton {
+  align-self: flex-end;
+  margin-top: 1rem;
+  padding: 10px;
+  min-width: 100px;
+  background-color: #6da3b5;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  cursor: pointer;
+  font-family: "Kanit", sans-serif;
+}
+
+.container .section .gridPlot {
+  display: grid;
+  grid-template-columns: repeat(9, 25px);
+  gap: 0;
+}
+
+.container .section .gridPlot .box {
+  border: 1px solid #73777b;
+  width: 25px;
+  height: 25px;
+}
+
+.container .section .box.start {
+  background-color: #7aa874;
+}
+
+.container .section .box.end {
+  background-color: #e76161;
+}
+
+.container .section .box.between {
+  background-color: #b7b7b7;
+}
